@@ -1,6 +1,6 @@
 import java.util.*;
 
-// this is one of the scheduling algoritham  fcfs used inn operating system
+// this is one of the scheduling algoritham  fcfs used inn operating systems
 
 class Process {
     int id, burstTime, arrivalTime;
