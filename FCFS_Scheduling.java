@@ -1,5 +1,7 @@
 import java.util.*;
 
+// this is one of the scheduling algoritham  fcfs used inn operating system
+
 class Process {
     int id, burstTime, arrivalTime;
     int waitingTime = 0, turnaroundTime = 0;
