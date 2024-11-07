@@ -1,6 +1,5 @@
 import java.util.*;
 
-// this is one of the scheduling algoritham  fcfs used inn operating systems
 
 class Process {
     int id, burstTime, arrivalTime;
@@ -13,7 +12,7 @@ class Process {
     }
 }
 
-public class FCFS_Scheduling {
+public class FCFS {
 
     // FCFS Algorithm
     public void fcfs(List<Process> processes) {
@@ -61,8 +60,8 @@ public class FCFS_Scheduling {
         // Sort processes by arrival time to implement FCFS
         processes.sort(Comparator.comparingInt(p -> p.arrivalTime));
 
-        // Creating an object of FCFS_Scheduling to call the methods
-        FCFS_Scheduling scheduler = new FCFS_Scheduling();
+        // Creating an object of FCFS to call the methods
+        FCFS scheduler = new FCFS();
         scheduler.fcfs(processes);  // Call FCFS Algorithm
         scheduler.display(processes);  // Display the results
     }
